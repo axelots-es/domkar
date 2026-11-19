@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://contoh-domain.com/sitemap.xml
