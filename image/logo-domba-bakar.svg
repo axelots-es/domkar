@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Logo Domba Bakar">
+  <!-- Tubuh domba (bulu putih bulat) -->
+  <ellipse cx="32" cy="36" rx="18" ry="13" fill="#fff" stroke="#c8d8c8" stroke-width="1.2"/>
+  <!-- Bulu tekstur -->
+  <circle cx="20" cy="30" r="6" fill="#f0f4f0" stroke="#c8d8c8" stroke-width="1"/>
+  <circle cx="27" cy="26" r="6.5" fill="#f0f4f0" stroke="#c8d8c8" stroke-width="1"/>
+  <circle cx="36" cy="25" r="6.5" fill="#f0f4f0" stroke="#c8d8c8" stroke-width="1"/>
+  <circle cx="44" cy="30" r="5.5" fill="#f0f4f0" stroke="#c8d8c8" stroke-width="1"/>
+  <circle cx="41" cy="37" r="5" fill="#f0f4f0" stroke="#c8d8c8" stroke-width="1"/>
+  <circle cx="22" cy="37" r="5" fill="#f0f4f0" stroke="#c8d8c8" stroke-width="1"/>
+  <!-- Kepala domba -->
+  <ellipse cx="47" cy="28" rx="8" ry="7" fill="#e8ede8" stroke="#b0c8b0" stroke-width="1.2"/>
+  <!-- Telinga -->
+  <ellipse cx="53" cy="22" rx="3" ry="5" fill="#d4e8d4" stroke="#b0c8b0" stroke-width="1" transform="rotate(20 53 22)"/>
+  <!-- Mata -->
+  <circle cx="49" cy="27" r="1.4" fill="#2E7D32"/>
+  <circle cx="49.5" cy="26.6" r="0.4" fill="#fff"/>
+  <!-- Hidung -->
+  <ellipse cx="53" cy="30" rx="2" ry="1.2" fill="#c8b4b4"/>
+  <!-- Kaki -->
+  <rect x="22" y="46" width="5" height="10" rx="2" fill="#c8d8c8" stroke="#b0c8b0" stroke-width="1"/>
+  <rect x="29" y="47" width="5" height="9" rx="2" fill="#c8d8c8" stroke="#b0c8b0" stroke-width="1"/>
+  <rect x="36" y="47" width="5" height="9" rx="2" fill="#c8d8c8" stroke="#b0c8b0" stroke-width="1"/>
+  <rect x="43" y="46" width="5" height="10" rx="2" fill="#c8d8c8" stroke="#b0c8b0" stroke-width="1"/>
+  <!-- Api (grill flame) -->
+  <path d="M28 22 Q26 16 30 12 Q28 18 33 14 Q30 19 35 16 Q31 21 34 22 Q31 24 28 22Z" fill="#F9A825" opacity="0.95"/>
+  <path d="M30 22 Q28 17 32 13 Q30 18 35 15 Q32 20 36 17 Q33 22 35 22 Q32 24 30 22Z" fill="#ff6d00" opacity="0.8"/>
+  <path d="M31 22 Q30 18 33 15 Q31 19 35 17 Q33 21 34 22 Q32 23 31 22Z" fill="#fff3e0" opacity="0.6"/>
+</svg>
