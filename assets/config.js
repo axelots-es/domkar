@@ -26,12 +26,13 @@ window.SITE = {
         ["🛵", "Kepuasan anda, prioritas kami", "Kualitas kebersihan, ketepatan waktu dan rasa kami jaga agar bisa memberikan hidangan yang terbaik untuk segala acara anda."]
     ],
     clients: [
-        { name: "PT Telkom Indonesia", logo: "", initial: "TI" },
-        { name: "Bank BRI", logo: "", initial: "BRI" },
-        { name: "Universitas Brawijaya", logo: "", initial: "UB" },
-        { name: "Pemkot Malang", logo: "", initial: "PM" },
-        { name: "RSU Saiful Anwar", logo: "", initial: "RSSA" },
-        { name: "PT Pos Indonesia", logo: "", initial: "POS" }
+        { name: "Eagle Sporting Good", logo: "", initial: "TI" },
+        { name: "PT SAI", logo: "", initial: "BRI" },
+        { name: "DISNAKER Nganjuk", logo: "", initial: "UB" },
+        { name: "BLK Nganjuk", logo: "", initial: "PM" },
+        { name: "Nucless", logo: "", initial: "RSSA" },
+        { name: "LPK Insan Kamil", logo: "", initial: "POS" },
+        { name: "LPNU Nganjuk", logo: "", initial: "POS" }
     ],
     reviews: [
         ["Rina A.", 5, "Porsinya pas, sayurnya masih segar. Langganan makan siang kantor."],

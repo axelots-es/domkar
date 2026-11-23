@@ -452,11 +452,13 @@ summary:focus-visible {
 
 /* klien */
 .klien-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
     margin-top: 32px
 }
+
 .klien-card {
     display: flex;
     flex-direction: column;
@@ -471,17 +473,21 @@ summary:focus-visible {
     font-weight: 600;
     font-size: 14px;
     color: var(--mute);
-    transition: box-shadow .2s, transform .2s
+    transition: box-shadow .2s, transform .2s;
+    width: calc(50% - 8px)
 }
+
 .klien-card:hover {
     box-shadow: var(--shadow);
     transform: translateY(-3px)
 }
+
 .klien-card img {
     height: 48px;
     max-width: 120px;
     object-fit: contain
 }
+
 .klien-initial {
     width: 64px;
     height: 64px;
@@ -502,6 +508,7 @@ summary:focus-visible {
     align-items: center;
     gap: 16px
 }
+
 .klien-cta p {
     margin: 0;
     color: var(--mute);
@@ -533,6 +540,29 @@ summary:focus-visible {
 }
 
 /* faq */
+.faq-cta {
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px
+}
+
+.faq-cta-title {
+    margin: 0;
+    font: 600 17px Poppins, sans-serif;
+    color: var(--ink)
+}
+
+.faq-cta-sub {
+    margin: 0 0 12px;
+    color: var(--mute);
+    font-size: 14px
+}
+
 details {
     border-bottom: 1px solid var(--line);
     padding: 4px 0
@@ -592,12 +622,102 @@ footer a {
 
 .foot {
     display: grid;
-    gap: 24px
+    gap: 28px;
+    align-items: start
+}
+
+.foot-map {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.foot-map iframe {
+    width: 100%;
+    height: 180px;
+    border: 0;
+    border-radius: 12px;
+    display: block;
+    opacity: .9
+}
+
+.foot-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.foot-brand {
+    font-size: 17px;
+    font-family: Poppins, sans-serif
 }
 
 .foot p {
-    margin: 6px 0 0;
-    opacity: .9
+    margin: 0;
+    opacity: .85;
+    line-height: 1.8
+}
+
+.foot b {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    opacity: 1
+}
+
+.foot-link {
+    display: inline-block;
+    margin-top: 4px;
+    opacity: .85;
+    font-size: 14px;
+    text-decoration: underline
+}
+
+.foot-socmed {
+    display: flex;
+    gap: 12px;
+    margin-top: 4px
+}
+
+.foot-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background .2s
+}
+
+.foot-icon:hover {
+    background: rgba(255, 255, 255, .22)
+}
+
+.foot-icon svg {
+    flex-shrink: 0
+}
+
+.foot-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot-ico {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+    flex-shrink: 0;
+}
+
+.foot-item:hover {
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 .copy {
@@ -645,9 +765,10 @@ footer a {
         flex-direction: row
     }
 
-    .klien-grid {
-        grid-template-columns: repeat(3, 1fr)
+    .klien-card {
+        width: calc((100% - 32px) / 3)
     }
+
     .trust {
         grid-template-columns: repeat(4, 1fr)
     }
@@ -657,7 +778,7 @@ footer a {
     }
 
     .foot {
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1.2fr 1fr 1fr 1fr
     }
 }
 
@@ -679,8 +800,8 @@ footer a {
         font-size: 17px
     }
 
-    .klien-grid {
-        grid-template-columns: repeat(6, 1fr)
+    .klien-card {
+        width: calc((100% - 80px) / 6)
     }
 
     .sec {

@@ -21,7 +21,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"Domba Bakar","telephone":"+6281234567890","servesCuisine":"Indonesian","address":{"@type":"PostalAddress","streetAddress":"Jl. Contoh No. 1","addressLocality":"Malang","addressCountry":"ID"},"openingHours":"Mo-Su 08:00-20:00","areaServed":"Malang"}
+{"@context":"https://schema.org","@type":"Restaurant","name":"Domba Bakar Dombastis","telephone":"+6287787502950","servesCuisine":"Indonesian","address":{"@type":"PostalAddress","streetAddress":"Trayang, Ngronggot","addressLocality":"Nganjuk","addressCountry":"ID"},"openingHours":"Sa-Su 06:00-20:00","url":"https://dombastis.id"}
 </script>
 </head>
 
@@ -105,6 +105,11 @@
       <div class="wrap narrow">
         <h2>Pertanyaan umum</h2>
         <div id="faqs"></div>
+        <div class="faq-cta">
+          <p class="faq-cta-title">Ada pertanyaan? Konsultasikan pesananmu sekarang!</p>
+          <p class="faq-cta-sub">Balasan cepat di jam operasional</p>
+          <a class="btn" id="btn-konsultasi" href="#">Konsultasi via WhatsApp</a>
+        </div>
       </div>
     </section>
 
@@ -119,16 +124,85 @@
 
   <footer id="kontak">
     <div class="wrap foot">
-      <div><b>Dapur Hijau</b>
-        <p>Jl. Contoh No. 1, Malang<br>Buka setiap hari 08.00–20.00<br>Area antar: Kota Malang & sekitarnya</p>
+
+      <!-- Maps embed – ujung kiri -->
+      <div class="foot-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.350771511293!2d112.0952037!3d-7.645377000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78454ffa216511%3A0xe0a673d8acd41683!2sDombastis.id!5e0!3m2!1sid!2sid!4v1795449082191!5m2!1sid!2sid"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <a data-maps href="https://maps.app.goo.gl/iUURJYRk5P6gDeEY7?g_st=ic" target="_blank" rel="noopener noreferrer"
+          class="foot-link"></a>
       </div>
-      <div><b>Hubungi kami</b>
-        <p><a data-wa="footer" href="#">WhatsApp</a><br><a href="https://instagram.com/" target="_blank"
-            rel="noopener noreferrer">Instagram</a><br><a data-maps href="https://maps.google.com/" target="_blank"
-            rel="noopener noreferrer">Google Maps</a></p>
+
+      <div class="foot-col">
+        <b class="foot-brand">Domba Bakar Dombastis</b>
+        <p>Resto · Venue · Edu Farm</p>
+        <p><em>"Berkah Ternak Semua Bisa Makan Enak"</em></p>
       </div>
+
+      <div class="foot-col">
+        <b>Kontak &amp; Alamat</b>
+        <p>
+          <a data-wa="footer" href="#" class="foot-item">
+            <svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" />
+            </svg>
+            +62877-8750-2950
+          </a><br>
+
+          <a class="foot-item" href="https://dombastis.web.id" target="_blank" rel="noopener noreferrer">
+            <svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 9h-3a15.7 15.7 0 0 0-1.2-5.1A8 8 0 0 1 18.9 11zM12 4c.8 1 1.9 3.1 2.3 7H9.7C10.1 7.1 11.2 5 12 4zM4.3 13h3a15.7 15.7 0 0 0 1.2 5.1A8 8 0 0 1 4.3 13zm3-2h-3a8 8 0 0 1 4.2-5.1A15.7 15.7 0 0 0 7.3 11zM12 20c-.8-1-1.9-3.1-2.3-7h4.6c-.4 3.9-1.5 6-2.3 7zm2.5-1.9a15.7 15.7 0 0 0 1.2-5.1h3a8 8 0 0 1-4.2 5.1z" />
+            </svg>
+            Dombastis.web.id
+          </a><br>
+
+          <span class="foot-item">
+            <svg class="foot-ico" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.800 7-13a7 7 0 0 0-7-7zm0 9.500A2.500 2.500 0 1 1 12 6.500a2.500 2.500 0 0 1 0 5z" />
+            </svg>
+            Trayang, Ngronggot, Nganjuk
+          </span>
+        </p>
+      </div>
+
+      <div class="foot-col">
+        <b>Ikuti Kami</b>
+        <p>Temukan konten terbaru kami di media sosial</p>
+        <div class="foot-socmed">
+          <a href="https://www.instagram.com/dombabakar_dombastis?evlk=ODRobDN5aW10MnAw" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram" class="foot-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" />
+            </svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@dombabakardombastis?_r=1&amp;_t=ZS-9BYigERQbBt" target="_blank"
+            rel="noopener noreferrer" aria-label="TikTok" class="foot-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+              <path
+                d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.75a8.19 8.19 0 0 0 4.78 1.52V6.82a4.84 4.84 0 0 1-1.01-.13z" />
+            </svg>
+            <span>TikTok</span>
+          </a>
+        </div>
+      </div>
+
     </div>
-    <p class="copy">© 2026 Dapur Hijau. Semua hak dilindungi.</p>
+    <p class="copy">© 2025 Domba Bakar Dombastis. Semua hak dilindungi.</p>
+  </footer>
+  <span>TikTok</span>
+  </a>
+  </div>
+  </div>
+
+  </div>
+  <p class="copy">© 2025 Domba Bakar Dombastis. Semua hak dilindungi.</p>
   </footer>
 
   <a class="fab" id="fab" data-wa="floating" href="#" aria-label="Chat WhatsApp">

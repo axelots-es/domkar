@@ -44,6 +44,15 @@
     return "<details><summary>" + esc(f[0]) + "</summary><p>" + esc(f[1]) + "</p></details>";
   }).join("");
 
+  // Tombol Konsultasi FAQ
+  var btnKonsultasi = $("#btn-konsultasi");
+  if (btnKonsultasi) {
+    var msgKonsultasi = "Assalamualaikum Dombastis. Saya ingin konsultasi pesanan saya.";
+    btnKonsultasi.href = wa(msgKonsultasi);
+    btnKonsultasi.target = "_blank";
+    btnKonsultasi.rel = "noopener noreferrer";
+  }
+
   // Tombol Testfood
   var btnTestfood = $("#btn-testfood");
   if (btnTestfood) {
