@@ -25,14 +25,18 @@ window.SITE = {
         ["🍚", "Varian menu Nusantara & Timur Tengah", "Menyediakan aneka hidangan Nusantara dan Timur Tengah yang ramah budget dan menggugah selera."],
         ["🛵", "Kepuasan anda, prioritas kami", "Kualitas kebersihan, ketepatan waktu dan rasa kami jaga agar bisa memberikan hidangan yang terbaik untuk segala acara anda."]
     ],
+    // ===== KLIEN KAMI =====
+    // Untuk menambahkan logo: Masukkan file gambar (png/webp/svg) ke folder 'image/clients/' 
+    // lalu tulis path-nya pada 'logo', contoh: logo: "image/clients/eagle.png"
+    // Jika 'logo' dibiarkan kosong (""), otomatis menampilkan kotak inisial.
     clients: [
-        { name: "Eagle Sporting Good", logo: "", initial: "TI" },
-        { name: "PT SAI", logo: "", initial: "BRI" },
-        { name: "DISNAKER Nganjuk", logo: "", initial: "UB" },
-        { name: "BLK Nganjuk", logo: "", initial: "PM" },
-        { name: "Nucless", logo: "", initial: "RSSA" },
-        { name: "LPK Insan Kamil", logo: "", initial: "POS" },
-        { name: "LPNU Nganjuk", logo: "", initial: "POS" }
+        { name: "Eagle Sporting Good", logo: "image/egle.webp", initial: "ESG" },
+        { name: "PT SAI", logo: "", initial: "SAI" },
+        { name: "DISNAKER Nganjuk", logo: "", initial: "DIS" },
+        { name: "BLK Nganjuk", logo: "", initial: "BLK" },
+        { name: "Nucless", logo: "", initial: "NUC" },
+        { name: "LPK Insan Kamil", logo: "", initial: "IK" },
+        { name: "LPNU Nganjuk", logo: "", initial: "LPNU" }
     ],
     reviews: [
         ["Rina A.", 5, "Porsinya pas, sayurnya masih segar. Langganan makan siang kantor."],

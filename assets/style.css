@@ -485,7 +485,9 @@ summary:focus-visible {
 .klien-card img {
     height: 48px;
     max-width: 120px;
-    object-fit: contain
+    width: auto;
+    object-fit: contain;
+    display: block
 }
 
 .klien-initial {
