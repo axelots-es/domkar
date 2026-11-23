@@ -450,6 +450,65 @@ summary:focus-visible {
     color: var(--mute)
 }
 
+/* klien */
+.klien-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 32px
+}
+.klien-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 24px 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--mute);
+    transition: box-shadow .2s, transform .2s
+}
+.klien-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-3px)
+}
+.klien-card img {
+    height: 48px;
+    max-width: 120px;
+    object-fit: contain
+}
+.klien-initial {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    background: var(--mint);
+    color: var(--gd);
+    font: 700 16px Poppins, sans-serif;
+    display: grid;
+    place-items: center;
+    letter-spacing: .5px
+}
+
+.klien-cta {
+    margin-top: 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px
+}
+.klien-cta p {
+    margin: 0;
+    color: var(--mute);
+    font-size: 16px;
+    max-width: 52ch
+}
+
 .rev {
     margin: 0;
     background: #fff;
@@ -586,6 +645,9 @@ footer a {
         flex-direction: row
     }
 
+    .klien-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
     .trust {
         grid-template-columns: repeat(4, 1fr)
     }
@@ -615,6 +677,10 @@ footer a {
 
     body {
         font-size: 17px
+    }
+
+    .klien-grid {
+        grid-template-columns: repeat(6, 1fr)
     }
 
     .sec {

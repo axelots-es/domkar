@@ -23,16 +23,35 @@
       '<a class="btn block" target="_blank" rel="noopener noreferrer" href="' + wa(msg) + '" data-pkg="' + esc(p.name) + '">Pesan Paket Ini</a></article>';
   }).join("");
 
+  // Klien Kami
+  if ($("#clients") && S.clients) {
+    $("#clients").innerHTML = S.clients.map(function (c) {
+      var img = c.logo
+        ? '<img src="' + esc(c.logo) + '" alt="Logo ' + esc(c.name) + '" loading="lazy">'
+        : '<div class="klien-initial">' + esc(c.initial) + '</div>';
+      return '<div class="klien-card">' + img + '<span>' + esc(c.name) + '</span></div>';
+    }).join("");
+  }
+
   // Keunggulan, testimoni, FAQ
   $("#perks").innerHTML = S.perks.map(function (k) {
     return '<div class="perk"><span class="ico" aria-hidden="true">' + k[0] + "</span><h3>" + esc(k[1]) + "</h3><p>" + esc(k[2]) + "</p></div>";
   }).join("");
-  $("#reviews").innerHTML = S.reviews.map(function (r) {
+  $("#reviews") && ($("#reviews").innerHTML = S.reviews.map(function (r) {
     return '<figure class="rev"><div class="stars" aria-label="Rating ' + r[1] + ' dari 5">' + "★".repeat(r[1]) + "☆".repeat(5 - r[1]) + "</div><blockquote>" + esc(r[2]) + "</blockquote><figcaption>" + esc(r[0]) + "</figcaption></figure>";
-  }).join("");
+  }).join(""));
   $("#faqs").innerHTML = S.faqs.map(function (f) {
     return "<details><summary>" + esc(f[0]) + "</summary><p>" + esc(f[1]) + "</p></details>";
   }).join("");
+
+  // Tombol Testfood
+  var btnTestfood = $("#btn-testfood");
+  if (btnTestfood) {
+    var msgTestfood = "Assalamualaikum Dombastis, saya tertarik untuk mengagendakan test food. Mohon informasinya. Terimakasih!";
+    btnTestfood.href = wa(msgTestfood);
+    btnTestfood.target = "_blank";
+    btnTestfood.rel = "noopener noreferrer";
+  }
 
   // Tautan WhatsApp umum
   var generic = "Halo, saya ingin memesan paket makanan. Mohon info ketersediaan. Terima kasih.";
