@@ -1,42 +1,61 @@
 /* ===== EDIT DI SINI: nomor WhatsApp, paket, testimoni, FAQ ===== */
 window.SITE = {
     waNumber: "6287787502950", // format 62xxxxxxxxxx tanpa + atau 0 di depan
+    // ===== PILIHAN PAKET & LAYANAN =====
     packages: [
         {
-            name: "Catering", for: " kotakan, prasmanan dan nampan", emoji: "🍱", price: 25000, priceLabel: "Rp 25.000", perHead: "Rp 25.000/orang",
-            items: ["Acara Kantor", "Keluarga", "Lamaran", "Nikahan"], note: "Siap antar ±45 menit"
+            name: "Catering",
+            emoji: "🍱",
+            badge: "Paling Populer",
+            desc: "Melayani pesanan catering kotakan, prasmanan, dan tumpeng nampan lezat higienis untuk berbagai acara kantor, keluarga, lamaran, maupun nikahan.",
+            catalogUrl: "https://drive.google.com/drive/folders/katalog-catering-dombastis",
+            waMessage: "Assalamualaikum Dombastis. saya ingin pesan catering"
         },
         {
-            name: "Aqiqah", for: "Kotakan dan Prasmanan", emoji: "🍛", price: 45000, priceLabel: "Rp 45.000", perHead: "± Rp 22.500/orang", badge: "Paling Hemat",
-            items: ["2 nasi", "2 lauk utama", "1 sayur", "2 pelengkap", "2 minuman"], note: "Siap antar ±45 menit"
+            name: "Aqiqah",
+            emoji: "🐑",
+            badge: "Sesuai Syariat",
+            desc: "Layanan aqiqah siap saji yang praktis, higienis, dan berkah. Olahan daging domba pilihan bebas bau prengus dalam bentuk box atau prasmanan.",
+            catalogUrl: "https://drive.google.com/drive/folders/katalog-aqiqah-dombastis",
+            waMessage: "Assalamualaikum Dombastis. saya ingin pesan aqiqah"
         },
         {
-            name: "Paket Keluarga", for: "Untuk 4–6 orang", emoji: "🍲", price: 120000, priceLabel: "Rp 120.000", perHead: "± Rp 20.000/orang", best: true,
-            items: ["5 nasi", "3 jenis lauk", "2 sayur", "Sambal", "Kerupuk", "4 minuman"], note: "Pesan 2 jam sebelumnya"
+            name: "Daging Domba",
+            emoji: "🥩",
+            badge: "Segar & Halal",
+            desc: "Penyediaan karkas dan daging domba segar berkualitas tinggi langsung dari peternakan kami. Terjamin halal, higienis, dan siap kirim.",
+            catalogUrl: "https://drive.google.com/drive/folders/katalog-daging-domba-dombastis",
+            waMessage: "Assalamualaikum Dombastis. saya ingin pesan daging domba"
         },
         {
-            name: "Paket Katering / Acara", for: "Minimal 20 porsi", emoji: "🎉", price: 0, priceLabel: "Mulai Rp 28.000/porsi", perHead: "Harga per porsi", badge: "Untuk Acara", catering: true,
-            items: ["Nasi box atau prasmanan", "Pilihan menu", "Kemasan rapi", "Opsi pengantaran"], note: "Pesan minimal H-2"
+            name: "Kunjungan Edu Farm",
+            emoji: "🏡",
+            badge: "Wisata Keluarga",
+            desc: "Wisata edukasi peternakan ramah keluarga dan anak. Interaksi memberi pakan domba, outbound seru, serta santap kuliner di resto asri.",
+            catalogUrl: "https://drive.google.com/drive/folders/katalog-edufarm-dombastis",
+            waMessage: "Assalamualaikum Dombastis. saya ingin pesan kunjungan edu farm"
         }
     ],
+    // ===== KEUNGGULAN =====
+    // Pilihan icon: "fasilitas", "halal", "menu", "kepuasan", atau masukkan emoji/SVG pilihan Anda
     perks: [
-        ["🌿", "Fasilitas Lengkap", "Rumah Makan, Venue, Sound, Proyektor, wisata edukasi, lapangan outbond semua ada di resto kami."],
-        ["🧼", "Jaminan Halal", "Sedari pemilihan domba sampai menjadi hidangan standar halal kami jaga sesuai syariat."],
-        ["🍚", "Varian menu Nusantara & Timur Tengah", "Menyediakan aneka hidangan Nusantara dan Timur Tengah yang ramah budget dan menggugah selera."],
-        ["🛵", "Kepuasan anda, prioritas kami", "Kualitas kebersihan, ketepatan waktu dan rasa kami jaga agar bisa memberikan hidangan yang terbaik untuk segala acara anda."]
+        ["fasilitas", "Fasilitas Lengkap", "Rumah Makan, Venue, Sound, Proyektor, wisata edukasi, lapangan outbond semua ada di resto kami."],
+        ["halal", "Jaminan Halal", "Sedari pemilihan domba sampai menjadi hidangan standar halal kami jaga sesuai syariat."],
+        ["menu", "Varian menu Nusantara & Timur Tengah", "Menyediakan aneka hidangan Nusantara dan Timur Tengah yang ramah budget dan menggugah selera."],
+        ["kepuasan", "Kepuasan anda, prioritas kami", "Kualitas kebersihan, ketepatan waktu dan rasa kami jaga agar bisa memberikan hidangan yang terbaik untuk segala acara anda."]
     ],
     // ===== KLIEN KAMI =====
     // Untuk menambahkan logo: Masukkan file gambar (png/webp/svg) ke folder 'image/clients/' 
     // lalu tulis path-nya pada 'logo', contoh: logo: "image/clients/eagle.png"
     // Jika 'logo' dibiarkan kosong (""), otomatis menampilkan kotak inisial.
     clients: [
-        { name: "Eagle Sporting Good", logo: "image/egle.webp", initial: "ESG" },
-        { name: "PT SAI", logo: "", initial: "SAI" },
-        { name: "DISNAKER Nganjuk", logo: "", initial: "DIS" },
-        { name: "BLK Nganjuk", logo: "", initial: "BLK" },
-        { name: "Nucless", logo: "", initial: "NUC" },
-        { name: "LPK Insan Kamil", logo: "", initial: "IK" },
-        { name: "LPNU Nganjuk", logo: "image/lpnu.webp", initial: "LPNU" }
+        { name: "Eagle Sporting Good", logo: "image/egle.png", initial: "ESG" },
+        { name: "PT SAI", logo: "image/sai.png", initial: "SAI" },
+        { name: "DISNAKER Nganjuk", logo: "image/disnaker.webp", initial: "DIS" },
+        { name: "BLK Nganjuk", logo: "image/blk.webp", initial: "BLK" },
+        { name: "Nucless", logo: "image/nucless.webp", initial: "NUC" },
+        { name: "LPK Insan Kamil", logo: "image/lpk.webp", initial: "IK" },
+        { name: "LPNU Nganjuk", logo: "image/lpnu.png", initial: "LPNU" }
     ],
     reviews: [
         ["Rina A.", 5, "Porsinya pas, sayurnya masih segar. Langganan makan siang kantor."],
