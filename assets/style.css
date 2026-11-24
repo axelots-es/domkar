@@ -311,13 +311,19 @@ summary:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: auto
+    margin-top: auto;
+    position: relative;
+    z-index: 2
 }
 
 .card-actions .btn {
     min-height: 44px;
     font-size: 14.5px;
-    padding: 0 16px
+    padding: 0 16px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    pointer-events: auto
 }
 
 .btn-katalog {
@@ -344,7 +350,8 @@ summary:focus-visible {
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     opacity: 0;
-    transition: opacity .3s
+    transition: opacity .3s;
+    pointer-events: none
 }
 
 .card:hover::before {
