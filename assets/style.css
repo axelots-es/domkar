@@ -464,42 +464,58 @@ summary:focus-visible {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 14px;
     background: #fff;
     border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 24px 16px;
+    border-radius: 18px;
+    padding: 24px 14px;
     text-align: center;
     font-weight: 600;
-    font-size: 14px;
-    color: var(--mute);
     transition: box-shadow .2s, transform .2s;
-    width: calc(50% - 8px)
+    width: calc(50% - 8px);
+    min-height: 165px
 }
 
 .klien-card:hover {
     box-shadow: var(--shadow);
-    transform: translateY(-3px)
+    transform: translateY(-4px)
 }
 
 .klien-card img {
-    height: 48px;
-    max-width: 120px;
+    height: 68px;
+    max-width: 140px;
     width: auto;
     object-fit: contain;
-    display: block
+    display: block;
+    transition: transform .2s ease
+}
+
+.klien-card:hover img {
+    transform: scale(1.05)
 }
 
 .klien-initial {
-    width: 64px;
-    height: 64px;
-    border-radius: 14px;
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
     background: var(--mint);
     color: var(--gd);
-    font: 700 16px Poppins, sans-serif;
+    font: 700 20px Poppins, sans-serif;
     display: grid;
     place-items: center;
-    letter-spacing: .5px
+    letter-spacing: .5px;
+    transition: transform .2s ease
+}
+
+.klien-card:hover .klien-initial {
+    transform: scale(1.05)
+}
+
+.klien-card span {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.35
 }
 
 .klien-cta {
@@ -768,7 +784,25 @@ footer a {
     }
 
     .klien-card {
-        width: calc((100% - 32px) / 3)
+        width: calc((100% - 32px) / 3);
+        padding: 28px 18px;
+        min-height: 180px;
+        gap: 16px
+    }
+
+    .klien-card img {
+        height: 78px;
+        max-width: 155px
+    }
+
+    .klien-initial {
+        width: 78px;
+        height: 78px;
+        font-size: 22px
+    }
+
+    .klien-card span {
+        font-size: 15px
     }
 
     .trust {
@@ -803,7 +837,26 @@ footer a {
     }
 
     .klien-card {
-        width: calc((100% - 80px) / 6)
+        width: calc((100% - 48px) / 4);
+        padding: 32px 20px;
+        min-height: 195px;
+        gap: 18px
+    }
+
+    .klien-card img {
+        height: 85px;
+        max-width: 170px
+    }
+
+    .klien-initial {
+        width: 85px;
+        height: 85px;
+        font-size: 24px;
+        border-radius: 20px
+    }
+
+    .klien-card span {
+        font-size: 16px
     }
 
     .sec {

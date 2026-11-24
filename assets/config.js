@@ -36,7 +36,7 @@ window.SITE = {
         { name: "BLK Nganjuk", logo: "", initial: "BLK" },
         { name: "Nucless", logo: "", initial: "NUC" },
         { name: "LPK Insan Kamil", logo: "", initial: "IK" },
-        { name: "LPNU Nganjuk", logo: "", initial: "LPNU" }
+        { name: "LPNU Nganjuk", logo: "image/lpnu.webp", initial: "LPNU" }
     ],
     reviews: [
         ["Rina A.", 5, "Porsinya pas, sayurnya masih segar. Langganan makan siang kantor."],
