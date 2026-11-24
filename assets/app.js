@@ -23,10 +23,10 @@
         "<h3>" + esc(p.name) + "</h3>" +
         '<p class="card-desc">' + esc(desc) + "</p>" +
         '<div class="card-actions">' +
-          '<a class="btn btn-ghost block btn-katalog" target="_blank" rel="noopener noreferrer" href="' + esc(driveUrl) + '">Lihat Katalog</a>' +
-          '<a class="btn block" target="_blank" rel="noopener noreferrer" href="' + wa(msg) + '" data-pkg="' + esc(p.name) + '">Pesan Layanan</a>' +
+        '<a class="btn btn-ghost block btn-katalog" target="_blank" rel="noopener noreferrer" href="' + esc(driveUrl) + '">Lihat Katalog</a>' +
+        '<a class="btn block" target="_blank" rel="noopener noreferrer" href="' + wa(msg) + '" data-pkg="' + esc(p.name) + '">Pesan Layanan</a>' +
         "</div>" +
-      "</article>";
+        "</article>";
     }).join("");
   }
 

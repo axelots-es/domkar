@@ -2,13 +2,14 @@
 window.SITE = {
     waNumber: "6287787502950", // format 62xxxxxxxxxx tanpa + atau 0 di depan
     // ===== PILIHAN PAKET & LAYANAN =====
+    // catalogUrl: Tautan Google Drive katalog (default langsung ke https://drive.google.com/ atau ganti dengan link folder/file Anda)
     packages: [
         {
             name: "Catering",
             emoji: "🍱",
             badge: "Paling Populer",
             desc: "Melayani pesanan catering kotakan, prasmanan, dan tumpeng nampan lezat higienis untuk berbagai acara kantor, keluarga, lamaran, maupun nikahan.",
-            catalogUrl: "https://drive.google.com/drive/folders/katalog-catering-dombastis",
+            catalogUrl: "https://drive.google.com/",
             waMessage: "Assalamualaikum Dombastis. saya ingin pesan catering"
         },
         {
@@ -16,7 +17,7 @@ window.SITE = {
             emoji: "🐑",
             badge: "Sesuai Syariat",
             desc: "Layanan aqiqah siap saji yang praktis, higienis, dan berkah. Olahan daging domba pilihan bebas bau prengus dalam bentuk box atau prasmanan.",
-            catalogUrl: "https://drive.google.com/drive/folders/katalog-aqiqah-dombastis",
+            catalogUrl: "https://drive.google.com/",
             waMessage: "Assalamualaikum Dombastis. saya ingin pesan aqiqah"
         },
         {
@@ -24,7 +25,7 @@ window.SITE = {
             emoji: "🥩",
             badge: "Segar & Halal",
             desc: "Penyediaan karkas dan daging domba segar berkualitas tinggi langsung dari peternakan kami. Terjamin halal, higienis, dan siap kirim.",
-            catalogUrl: "https://drive.google.com/drive/folders/katalog-daging-domba-dombastis",
+            catalogUrl: "https://drive.google.com/",
             waMessage: "Assalamualaikum Dombastis. saya ingin pesan daging domba"
         },
         {
@@ -32,7 +33,7 @@ window.SITE = {
             emoji: "🏡",
             badge: "Wisata Keluarga",
             desc: "Wisata edukasi peternakan ramah keluarga dan anak. Interaksi memberi pakan domba, outbound seru, serta santap kuliner di resto asri.",
-            catalogUrl: "https://drive.google.com/drive/folders/katalog-edufarm-dombastis",
+            catalogUrl: "https://drive.google.com/",
             waMessage: "Assalamualaikum Dombastis. saya ingin pesan kunjungan edu farm"
         }
     ],
